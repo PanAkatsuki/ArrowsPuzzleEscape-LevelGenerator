@@ -45,13 +45,19 @@ With this generator, you can:
 ```
 ArrowsPuzzleEscape-LevelGenerator/
 ├── Assets/
-│ ├── Scripts/ # Core C# scripts
-│ │ ├── LevelGenerator.cs # Main generation logic
-│ │ ├── Arrow.cs # Arrow data structure
-│ │ ├── Tile.cs # Grid tile definition
-│ │ └── ArrowGenerator.cs # Arrow visualization
-│ ├── Prefabs/ # Arrow and tile prefabs
-│ └── Scenes/ # Example Unity scenes
+│   ├── Scripts/                 # Core C# logic scripts
+│   │   ├── Arrow/               # Arrow-related scripts
+│   │   │   ├── Arrow.cs               # Arrow data structure
+│   │   │   ├── ArrowClickHandler.cs   # Handles arrow click events
+│   │   │   └── ArrowGenerator.cs      # Arrow visualization and spawning
+│   │   ├── Debugger/            # Debugging tools
+│   │   │   └── ClickDebugger.cs       # Debug helper for input testing
+│   │   ├── Level/               # Level generation and management
+│   │   │   └── LevelGenerator.cs      # Core level generation logic
+│   │   └── Tile/                # Tile and grid system
+│   │       └── Tile.cs               # Grid tile definition
+│   ├── Prefabs/                 # Arrow and tile prefabs
+│   └── Scenes/                  # Example Unity scenes
 ├── ProjectSettings/
 ├── Packages/
 ├── README.md
